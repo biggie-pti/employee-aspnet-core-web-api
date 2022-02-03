@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APP.API</name>
+    </assembly>
+    <members>
+        <member name="T:APP.API.Controllers.DepartmentsController">
+            <summary>
+            Departments Controller
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.DepartmentsController.#ctor(APP.Abstraction.Services.IApplicationService,Microsoft.Extensions.Logging.ILogger{APP.API.Controllers.DepartmentsController})">
+            <summary>
+            Departments Controller constructor
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.DepartmentsController.Post(APP.Abstraction.Models.Department)">
+            <summary>
+            Create department 
+            </summary>
+            <param name="department"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.DepartmentsController.GetDepartments">
+            <summary>
+            Get all departments 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.DepartmentsController.GetDepartment(System.Guid)">
+            <summary>
+            Get department by Id 
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.DepartmentsController.Put(APP.Abstraction.Models.Department)">
+            <summary>
+            Update department
+            </summary>
+            <param name="department"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.DepartmentsController.Delete(System.Guid)">
+            <summary>
+            Delete department 
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:APP.API.Controllers.EmployeesController">
+            <summary>
+            Employees Controller
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.#ctor(APP.Abstraction.Services.IApplicationService,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,System.String,Microsoft.Extensions.Logging.ILogger{APP.API.Controllers.EmployeesController})">
+            <summary>
+            Employees Controller constructor
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.Post(APP.Abstraction.Models.Employee)">
+            <summary>
+            Create department 
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.GetEmployees">
+            <summary>
+            Get all employees
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.GetEmployee(System.Guid)">
+            <summary>
+            Get employee by Id 
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.Put(APP.Abstraction.Models.Employee)">
+            <summary>
+            Update employee
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.Delete(System.Guid)">
+            <summary>
+            Delete employee
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.SavePhoto">
+            <summary>
+            Save a photo from file to a local folder
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.Get">
+            <summary>
+            Uploading file
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.GetFile">
+            <summary>
+            Downloading file to computer
+            </summary>
+        </member>
+        <member name="M:APP.API.Controllers.EmployeesController.Upload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            upload file
+            </summary>
+        </member>
+        <member name="T:APP.API.graphQL.Query">
+            <summary>
+            Graphql query processing
+            </summary>
+        </member>
+        <member name="M:APP.API.graphQL.Query.GetDepartment(APP.Abstraction.Repositories.IDepartmentRepository)">
+            <summary>
+            Returns Departments based on user defined criteria
+            </summary>
+        </member>
+        <member name="M:APP.API.graphQL.Query.GetEmployee(APP.Abstraction.Repositories.IEmployeeRepository)">
+            <summary>
+            Get employees based on user defined criteria
+            </summary>
+        </member>
+        <member name="T:APP.API.Helpers.LoggingContext">
+            <summary>
+            Context log headers file
+            </summary>
+        </member>
+        <member name="M:APP.API.Helpers.LoggingContext.#ctor(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            construct log context
+            </summary>
+        </member>
+        <member name="P:APP.API.Helpers.LoggingContext.ServerName">
+            <summary>
+            server name
+            </summary>
+        </member>
+        <member name="P:APP.API.Helpers.LoggingContext.APIName">
+            <summary>
+            api name
+            </summary>
+        </member>
+        <member name="P:APP.API.Helpers.LoggingContext.ControllerName">
+            <summary>
+            controller name
+            </summary>
+        </member>
+        <member name="P:APP.API.Helpers.LoggingContext.ActionName">
+            <summary>
+            action name
+            </summary>
+        </member>
+        <member name="P:APP.API.Helpers.LoggingContext.StatusCode">
+            <summary>
+            satus code
+            </summary>
+        </member>
+        <member name="P:APP.API.Helpers.LoggingContext.ErrorMessage">
+            <summary>
+            error message
+            </summary>
+        </member>
+        <member name="T:APPAPI.Program">
+            <summary>
+            main program 
+            </summary>
+        </member>
+        <member name="M:APPAPI.Program.Main(System.String[])">
+            <summary>
+            execution entry point
+            </summary>
+        </member>
+        <member name="M:APPAPI.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            create host builder
+            </summary>
+        </member>
+        <member name="T:APPAPI.Startup">
+            <summary>
+            startup
+            </summary>
+        </member>
+        <member name="M:APPAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            constructor for startup
+            </summary>
+        </member>
+        <member name="P:APPAPI.Startup.Configuration">
+            <summary>
+            config
+            </summary>
+        </member>
+        <member name="M:APPAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+        </member>
+        <member name="M:APPAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+        </member>
+    </members>
+</doc>
