@@ -78,20 +78,15 @@ namespace APP.API.Controllers
             using (StreamWriter writer = new StreamWriter(fullPath))
             {
                 writer.WriteLine(result);
-                writer.WriteLine("Vidya Agarwal");
-                writer.WriteLine("Mahesh Chand");
-                writer.WriteLine("Vijay Anand");
-                writer.WriteLine("Jignesh Trivedi");
+                writer.WriteLine("C Programming");
+                writer.WriteLine("C++ Programming");
+                writer.WriteLine("Back for Front-end");
+                writer.WriteLine("Web programming");
             }
 
 
 
-            using (var writer = new StreamWriter("filePersons.csv"))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
-            {
-                csv.WriteRecords(myPersonObjects);
-            }
-
+           
 
             if (result.Count < 1)
             {
