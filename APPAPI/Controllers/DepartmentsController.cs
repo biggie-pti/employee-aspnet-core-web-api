@@ -57,10 +57,6 @@ namespace APP.API.Controllers
 
             var result = await _applicationService.CreateDepartment(department);
 
-         
-
-
-
             if (result.Count < 1)
             {
                 return Ok(department);

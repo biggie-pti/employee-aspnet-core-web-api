@@ -30,9 +30,7 @@ namespace APP.API.Helpers
         /// api name
         /// </summary>
         public string APIName { get; set; }
-        /// <summary>
-        /// controller name
-        /// </summary>
+
         public string ControllerName { get; set; }
         /// <summary>
         /// action name

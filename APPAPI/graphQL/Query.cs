@@ -24,6 +24,7 @@ namespace APP.API.graphQL
 
         }
 
+
         /// <summary>
         /// Get employees based on user defined criteria
         /// </summary>
